@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Procedure type name:
+  = @procedure_type.procedure_type_name
+%p
+  %b Procedure:
+  = @procedure_type.procedure.procedure_name
+
+= link_to 'Edit', edit_procedure_type_path(@procedure_type)
+\|
+= link_to 'Back', procedure_types_path

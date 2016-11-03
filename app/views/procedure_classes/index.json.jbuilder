@@ -1,0 +1,1 @@
+json.array! @procedure_classes, partial: 'procedure_classes/procedure_class', as: :procedure_class

@@ -1,0 +1,24 @@
+= simple_form_for(@clinic) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :cnpj
+    = f.input :social_name
+    = f.input :fantasy_name
+    = f.input :address
+    = f.input :neighborhood
+    = f.input :city
+    = f.input :state
+    = f.input :cep
+    = f.input :phone
+    = f.input :fax
+    = f.input :celphone
+    = f.input :representative_name
+    = f.input :representative_phone
+    = f.input :geolocation
+    = f.input :nusai
+    = f.association :procedure_class, label_method: :procedure_class_name
+
+  .form-actions
+    = f.button :submit

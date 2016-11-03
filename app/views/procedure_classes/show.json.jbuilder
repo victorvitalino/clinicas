@@ -1,0 +1,1 @@
+json.partial! "procedure_classes/procedure_class", procedure_class: @procedure_class

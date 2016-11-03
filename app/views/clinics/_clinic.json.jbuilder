@@ -1,0 +1,2 @@
+json.extract! clinic, :id, :name, :cnpj, :social_name, :fantasy_name, :address, :neighborhood, :city, :state, :cep, :phone, :fax, :celphone, :representative_name, :representative_phone, :geolocation, :nusai, :procedure_class_id, :created_at, :updated_at
+json.url clinic_url(clinic, format: :json)

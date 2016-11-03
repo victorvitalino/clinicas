@@ -1,0 +1,23 @@
+%h1 Listing procedure_classes
+
+%table
+  %thead
+    %tr
+      %th Procedure class name
+      %th Procedure type
+      %th
+      %th
+      %th
+
+  %tbody
+    - @procedure_classes.each do |procedure_class|
+      %tr
+        %td= procedure_class.procedure_class_name
+        %td= procedure_class.procedure_type.procedure_type_name
+        %td= link_to 'Show', procedure_class
+        %td= link_to 'Edit', edit_procedure_class_path(procedure_class)
+        %td= link_to 'Destroy', procedure_class, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Procedure class', new_procedure_class_path

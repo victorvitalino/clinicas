@@ -1,0 +1,9 @@
+= simple_form_for(@procedure_type) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :procedure_type_name
+    -# = f.input :procedure, as: :select, collection: ::Procedure.all.order(:procedure_name), selected: f.object.procedure_id
+    = f.association :procedure, label_method: :procedure_name
+  .form-actions
+    = f.button :submit

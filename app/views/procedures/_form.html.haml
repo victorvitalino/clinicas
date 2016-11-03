@@ -1,0 +1,8 @@
+= simple_form_for(@procedure) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :procedure_name
+
+  .form-actions
+    = f.button :submit

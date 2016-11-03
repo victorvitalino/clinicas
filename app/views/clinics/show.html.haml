@@ -1,0 +1,57 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @clinic.name
+%p
+  %b Cnpj:
+  = @clinic.cnpj
+%p
+  %b Social name:
+  = @clinic.social_name
+%p
+  %b Fantasy name:
+  = @clinic.fantasy_name
+%p
+  %b Address:
+  = @clinic.address
+%p
+  %b Neighborhood:
+  = @clinic.neighborhood
+%p
+  %b City:
+  = @clinic.city
+%p
+  %b State:
+  = @clinic.state
+%p
+  %b Cep:
+  = @clinic.cep
+%p
+  %b Phone:
+  = @clinic.phone
+%p
+  %b Fax:
+  = @clinic.fax
+%p
+  %b Celphone:
+  = @clinic.celphone
+%p
+  %b Representative name:
+  = @clinic.representative_name
+%p
+  %b Representative phone:
+  = @clinic.representative_phone
+%p
+  %b Geolocation:
+  = @clinic.geolocation
+%p
+  %b Nusai:
+  = @clinic.nusai
+%p
+  %b Procedure class:
+  = @clinic.procedure_class
+
+= link_to 'Edit', edit_clinic_path(@clinic)
+\|
+= link_to 'Back', clinics_path
